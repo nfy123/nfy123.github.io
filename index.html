@@ -31,16 +31,16 @@
 			<header id="header">
 
 				<!-- Logo -->
-					<h1 id="logo">CS109 Project by David Herman, Aaron Pelz, and Nelson Yanes</h1>
+					<h1 id="logo">CS109 Project by David Herman, Aaron Pelz, and Nelson Yanes-Nunez</h1>
 				
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
 							<li><a href="#intro">Intro</a></li>
 							<li><a href="#one">Our Project</a></li>
-							<li><a href="#two">Methodology</a></li>
-							<li><a href="#work">Results</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="#two">Motivation</a></li>
+							<li><a href="#work">Methodology and Results</a></li>
+							<li><a href="#contact">Conclusion</a></li>
 						</ul>
 					</nav>
 
@@ -83,9 +83,9 @@
 			<section id="two" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>Methodology</h2>
+						<h2>Motivation</h2>
 					</header>
-					<p>[Insert Methodology Information Here]]</p>
+					<p>Twitter has revolutionized the way the world fundamentally communicates. With the click of a button, we are able to share stories, pictures, and ideas basically instantly. This has created an urgent want to be heard, accepted, and well-liked. Many social networking sites already prize these qualities through Facebook "likes" or Tumblr "notes," and Twitter is no exception. Having a trending tweet is what most users seek to accomplish. And this is where our project comes in.</p>
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -94,25 +94,23 @@
 			<section id="work" class="main style3 primary">
 				<div class="content container">
 					<header>
-						<h2>Results</h2>
-						<p>[Insert Results Here]]</p>
+						<h2>Methodology and Results</h2>
+						<p>
+							We obtained data extracted using the twitter API. Since many retweets appeared to have duplicate information, we decided to only study the original tweets. Before diving into the machine-learning component of our project, we gathered initial results to observe correlations among predictors in our dataset. This diagram is representative of most of the correlations we found, where we didn't really find anything shocking or unusual. <br>
+
+							<img src="images/correlations.png"/>
+
+<br>
+We also constructed regression lines, with 95% confidence intervals, on the relationships between retweets and favorites and retweets+favorites and number of followers. If anything, these diagrams show that tweets tend to become popular if the author is already well-liked to begin with!
+<br>
+						 	<img src="images/regressions.png"/>
+<br>
+For the machine learning component of this project, we decided to use a random forest classifier to determine the most predictive features of a tweet. Favorites and followers seem to be the two most predictive features of a tweet. We definitely didn’t need this algorithm to determine this conclusion, but it is at least interesting for our analysis to see that the other features aren’t very predictive. 
+<br>
+							<img src="images/features.png"/>
+
+						</p>
 					</header>
-					
-					<!-- Lightbox Gallery  -->
-						<div class="container 75% gallery">
-							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/01.jpg" class="image fit from-left"><img src="images/thumbs/01.jpg" title="Air Lounge" alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/02.jpg" class="image fit from-right"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a></div>
-							</div>
-							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/03.jpg" class="image fit from-left"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/04.jpg" class="image fit from-right"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a></div>
-							</div>
-							<div class="row 0% images">
-								<div class="6u"><a href="images/fulls/05.jpg" class="image fit from-left"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a></div>
-								<div class="6u"><a href="images/fulls/06.jpg" class="image fit from-right"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a></div>
-							</div>
-						</div>
 
 				</div>
 			</section>
@@ -121,28 +119,20 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content container">
 					<header>
-						<h2>Say Hello.</h2>
+						<h2>Conclusion</h2>
 
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+						<p>We learned a lot about the data itself in Twitter but not enough to write our own tweets that will become internet famous. The most important factor in a tweet's "trendability" is the popularity of your account. In simple terms this means that the more people you interact with on Twitter, the more likely your tweets will be popular. 
+As detailed previously, we explored our data by using the Twitter API to pull tweets, then formated the data to look for correlation between features, and used machine learning to try and predict how "trendable" a tweet would be. Overall, we were not able to predict tweets as well as we hoped, since we wanted to learn how to create our own trendable tweets, but we learned the most important factor in trendability is how many people you are connected with on Twitter. Go figure! 
+We hope you enjoyed the show.
+<br>
+Love, 
+The Twitter Bros</p>
 					</header>
 					<div class="box container 75%">
 					
 					<!-- Contact Form -->
 							<form method="post" action="#">
-								<div class="row 50%">
-									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="email" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row 50%">
-									<div class="12u"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-										</ul>
-									</div>
-								</div>
+								<img src="images/bird.jpg"/>
 							</form>
 
 					</div>
